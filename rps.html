@@ -1,23 +1,26 @@
-<script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="rps.css" rel= "stylesheet" type= "text/css"></link>
+    <title>Rock Paper Scissors</title>
+    <script src= "rps.js"></script>
+  </head>
+  <body class = "centered">
+      <h1>Rock Paper Scissors</h1>
+    
+    <div class="computer">
+      <label> Computer Selection
+        <button id="computer">Hidden</button>
+      </label>   
+    </div>
+    <div class="player">
+      <label> Player Selection
+          <button id="choice">Make a Selection</button>
+      </label>
 
-//function to randomly return rock, paper or scissors
-function computerPlay () {
-let random = Math.floor(Math.random() * 3); 
-let outcome;
-if (random===0) {
-    outcome ='rock'; 
-    } else if (random===1) {
-    outcome ='paper'; 
-    } else {
-    outcome='scissors';
-}
-return outcome; 
-}
-
-//function that plays one round of rock, paper, scissors
-
-function rpsOneRound (){
-
-}
-
-</script>
+      <h2 id ="outcome">Who will win???</h2>
+    </div>
+  </body>
+</html>
